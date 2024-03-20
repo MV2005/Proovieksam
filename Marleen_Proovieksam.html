@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+    .navbar {
+        background-color: #F5F4F4;
+        overflow: hidden;
+      }
+      
+.navbar img {
+  height: 50px; 
+  margin-right: 20px; 
+}
+      .navbar a {
+        float: right;
+        display: block;
+        color: #000000; 
+        text-align: center;
+        padding: 15px 20px;
+        text-decoration: none;
+      }
+      
+      .navbar a:hover {
+        background-color: #ddd; 
+        color: rgb(47, 47, 47);
+      }
+
+      body, html {
+      height: 100%;
+      margin: 0;
+}
+.bg {
+
+  background-image: url("pariistorn.jpg");
+  height: 50%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.overlay-text {
+            position: absolute;
+            color:#F5F4F4;
+            top: 30%; 
+            transform: translateY(-50%); 
+            width: 100%;
+            text-align: center;
+            font-size: 25px; 
+        }
+        .container {
+    display: flex;
+    flex-direction: row; /* Items arranged horizontally */
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center align the container */
+    padding: 20px;
+  }
+
+  .image {
+    flex: 1; /* Image takes 50% of the container width */
+    padding: 20px; /* Add some spacing around the image */
+  }
+
+  .image img {
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .text {
+    flex: 1; /* Text takes 50% of the container width */
+    padding: 20px; /* Add some spacing around the text */
+  }
+
+  .text h2 {
+    font-size: 24px; /* Adjust heading font size */
+  }
+
+  .text p {
+    font-size: 16px; /* Adjust paragraph font size */
+  }
+
+  @media (max-width: 768px) {
+    /* Adjust layout for smaller screens */
+    .container {
+      flex-direction: column; /* Items stacked vertically on smaller screens */
+    }
+
+    .image,
+    .text {
+      flex: none; /* Reset flex to ensure each item takes full width on smaller screens */
+      width: 100%;
+    }
+  }
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOTOPARIIS Marleen Vahtra</title>
+</head>
+<body>
+
+    <div class="navbar">
+        <img src="1.GOTOPARIS_png_formaat.png" alt="Logo">
+        <a href="#">Ajalugu</a>
+        <a href="#">Galerii</a>
+        <a href="#">Kontaktid</a>
+      </div>
+    
+      <div class="bg">
+        <div class="overlay-text">
+            <h1>Avasta vaatamisväärsuseid
+                 Pariisis!</h1>
+    
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <div class="image">
+              <img src="pariistorn.jpg" alt="Image">
+            </div>
+            <div class="text">
+              <h2>Eiffeli torn</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget ligula eget ipsum dictum tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec sodales, est vitae viverra lobortis, urna est sodales velit, in ultricies nisi neque id eros.</p>
+            </div>
+          </div>
+
+    </div>
+
+</body>
+</html>
